@@ -1,73 +1,22 @@
-# React + TypeScript + Vite
+## Welcome to the Task Manager Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The task manager allows users to add, manage, and track tasks and projects in real time. All tasks are date stamped by the system at the time they are created, so users can track how long each task takes to complete. Users can add and keep notes pertaining to each task and keep all the information related to the task and its progress in one place, including the start date, projected time for completion, level of priority, category (business or personal), and status (perliminary, in progress, or completed).
 
-Currently, two official plugins are available:
+The dashboard shows a list of all current tasks with the title or name of the project or task. A details button for each task in the list lets users see, edit, and store all of the current details of each task to keep information up to date. When a task is complete or no longer relevant, users have the option to keep the task stored in the system in its current status or delete the task or project from the system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Auth0 integration promps users to log into the system using their Google account to keep information secure. After login, users are authenticated as they enter different areas of the site to prevent unauthorized access to information. 
 
-## React Compiler
+A modern, intuitive, and well designed User Interface utilizing Bootstrap for styling enables users to navigate easily and seemlessly from task creation to list views to detail views, editing, and deleting of tasks and or projects keeping everything organized and up to date. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Track all of your tasks and projects by:
 
-## Expanding the ESLint configuration
+* ID
+* Name
+* Date Created
+* Category
+* Priority
+* Duration
+* Notes and other Information 
+* Current Status
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Enjoy the level of confidence and productivity the Task Manager provides, knowing that important tasks will never slip through the cracks or fall behind schedule again. Organize all of your tasks, to-dos, and projects by category and priority on their respective time schedules to make the best use of your time and resources.
